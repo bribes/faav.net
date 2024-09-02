@@ -18,8 +18,7 @@
   transition: all 200ms linear;
 }
 
-html,
-body {
+html {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,12 +39,13 @@ body {
 .maincard {
   display: flex;
   flex-direction: column;
-  background-color: rgba(20, 20, 20, 0.902);
+  background-color: rgba(20, 20, 20, 0.93);
   margin-top: 10%;
   width: 700px;
   backdrop-filter: blur(7px);
   box-shadow: 0px 0px 40px rgb(0, 0, 0);
-  padding: 1rem;
+  padding: 1.25rem;
+  padding-bottom: 1.75rem;
 }
 
 .content {
@@ -138,6 +138,7 @@ h1 {
   margin-top: -2rem;
   background-color: hsla(0, 100%, 50%, 1);
   box-shadow: 0px 0px 30px hsla(0, 100%, 50%, 1);
+  z-index: -1;
 }
 
 ul {
