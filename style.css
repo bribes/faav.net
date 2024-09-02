@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
-
 :root {
   --background-color: #00e77f;
   --link-hover: hsla(0, 100%, 50%, 1);
@@ -13,6 +11,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: 'Inconsolata', sans-serif !important;
   -webkit-transition: all 200ms linear;
   -ms-transition: all 200ms linear;
   transition: all 200ms linear;
@@ -25,7 +24,26 @@ html {
   min-height: 100%;
   min-width: 100%;
   background-color: rgb(21, 21, 21);
-  font-family: "Source Code Pro", monospace;
+}
+
+@media (scripting: enabled) {
+  .preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
 }
 
 .wrapper {
@@ -39,13 +57,12 @@ html {
 .maincard {
   display: flex;
   flex-direction: column;
-  background-color: rgba(20, 20, 20, 0.93);
+  background-color: rgba(20, 20, 20, 0.935);
   margin-top: 10%;
   width: 700px;
   backdrop-filter: blur(7px);
   box-shadow: 0px 0px 40px rgb(0, 0, 0);
   padding: 1.25rem;
-  padding-bottom: 1.75rem;
 }
 
 .content {
@@ -121,6 +138,7 @@ h1 {
   font-size: 2.25rem;
   color: hsla(0, 100%, 50%, 1);
   display: flex;
+  margin: 1rem;
 }
 
 .search {
@@ -161,18 +179,21 @@ sup {
   color: hsla(0, 100%, 50%, 1);
   font-size: 12px;
   margin: 4px;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 750px) {
-  .maincard, .bg {
-      width: 80vw!important;
-      padding: 20px!important;
+
+  .maincard,
+  .bg {
+    width: 80vw !important;
+    padding: 20px !important;
   }
 
   .maincard .image {
-      position: absolute!important;
-      right: -9rem!important;
-      top: -16rem!important;
-      transform: scale(.2);
+    position: absolute !important;
+    right: -9rem !important;
+    top: -16rem !important;
+    transform: scale(.2);
   }
 }
