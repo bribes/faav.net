@@ -122,14 +122,21 @@ section {
   text-decoration: underline;
 }
 
-a:hover {
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    font-weight: 900;
+}
+
+:not(h1, h2, h3, h4, h5, h6) > a:hover {
   color: var(--link-hover);
-  transform: scale(2);
-  margin-bottom: 2px;
   font-weight: 500;
 }
 
-a {
+:not(h1, h2, h3, h4, h5, h6) > a {
   padding: 0px;
   text-decoration: none;
   color: aliceblue;
