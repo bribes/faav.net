@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: /404.html
+title: "Oops! Not Found"
+---
+
+{% capture content %}
+# 404
+Sorry, the page you are looking for does not exist.
+
+[Return to homepage]({{ site.baseurl }}/)
+{% endcapture %}
+{{ content | markdownify }}
