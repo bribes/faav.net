@@ -192,7 +192,7 @@ sup {
 }
 
 .nounderline {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 @media screen and (max-width: 750px) {
