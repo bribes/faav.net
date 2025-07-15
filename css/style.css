@@ -191,8 +191,11 @@ sup {
   font-weight: 300;
 }
 
-@media screen and (max-width: 750px) {
+.nounderline {
+  text-decoration: none;
+}
 
+@media screen and (max-width: 750px) {
   .maincard,
   .bg {
     width: 80vw !important;
