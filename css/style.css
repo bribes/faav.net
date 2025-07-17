@@ -103,7 +103,7 @@ section {
   padding-top: 5px;
   color: aliceblue;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
   border-color: rgba(255, 255, 255, 0);
   border-style: solid;
   border-width: 2px;
@@ -183,13 +183,13 @@ ul>li:before {
   content: "> ";
   text-indent: -5px;
   color: hsla(0, 100%, 50%, 1);
+  font-weight: 100;
 }
 
 sup {
   color: hsla(0, 100%, 50%, 1);
   font-size: 12px;
   margin: 4px;
-  font-weight: 300;
 }
 
 .nounderline {
