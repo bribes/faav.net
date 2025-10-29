@@ -195,7 +195,7 @@ sup {
 .nounderline {
   text-decoration: none !important;
   font-size: 21px;
-  text-shadow: 0 0 5px var(--link-heading);
+  text-shadow: 0 0 7px var(--link-heading);
 }
 
 @media screen and (max-width: 750px) {
