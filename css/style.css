@@ -18,9 +18,17 @@ html {
 }
 
 @media (scripting: enabled) {
+  .preload {
+    opacity: 0;
+  }
+
   .preload * {
     transition: none !important;
   }
+}
+
+body {
+  transition: opacity 200ms ease;
 }
 
 ::selection {
