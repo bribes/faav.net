@@ -133,7 +133,8 @@ section {
 }
 
 .blog-heading a:hover {
-  opacity: 0.75;
+  color: #ff5555;
+  text-shadow: 0 0 20px rgba(255, 26, 26, 0.5);
   font-weight: 700;
 }
 
@@ -145,7 +146,7 @@ a {
 }
 
 a:hover {
-  color: #e0e0e0;
+  color: #ff1a1a;
 }
 
 h1 a,
@@ -184,10 +185,13 @@ ul {
 
 ul > li {
   text-indent: -5px;
+}
+
+ul > li:has(a) {
   transition: transform 200ms ease;
 }
 
-ul > li:hover {
+ul > li:has(a):hover {
   transform: translateX(4px);
 }
 
