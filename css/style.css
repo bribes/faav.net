@@ -195,11 +195,13 @@ ul > li {
   text-indent: -5px;
 }
 
-ul > li:has(a) {
+ul > li:has(a),
+ul > li:has(.discord-toggle) {
   transition: transform 200ms ease;
 }
 
-ul > li:has(a):hover {
+ul > li:has(a):hover,
+ul > li:has(.discord-toggle):hover {
   transform: translateX(4px);
 }
 
@@ -216,6 +218,41 @@ sup {
   font-size: 0.7rem;
   margin-left: 6px;
   font-weight: 500;
+}
+
+/* ── Discord popover ── */
+
+.discord-toggle {
+  color: #bbb;
+  cursor: pointer;
+  position: relative;
+  transition: color 200ms ease;
+}
+
+.discord-toggle:hover {
+  color: #ff1a1a;
+}
+
+.discord-pop {
+  position: absolute;
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  color: #fff;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+
+.discord-toggle.active .discord-pop {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* ── Scrollbar ── */
