@@ -101,10 +101,10 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 300px;
-  margin-top: 1rem;
-  padding-top: 5px;
+  margin-top: 0;
+  padding-top: 15px;
   color: #d4d4d4;
   font-size: 20px;
   font-weight: 300;
@@ -118,7 +118,7 @@ section {
 
 .links h3 {
   color: #ff1a1a;
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -128,22 +128,23 @@ section {
 }
 
 .blog-heading {
-  font-size: 1.1rem !important;
+  font-size: 1.4rem !important;
   text-transform: none !important;
   letter-spacing: 0 !important;
   border-bottom: none !important;
-  padding-bottom: 0 !important;
-  text-shadow: 0 0 12px rgba(255, 26, 26, 0.3);
+  padding-bottom: 4px !important;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 16px rgba(255, 26, 26, 0.35);
 }
 
 .blog-heading a {
   color: #ff1a1a;
+  font-weight: 700;
 }
 
 .blog-heading a:hover {
   color: #ff5555;
-  text-shadow: 0 0 20px rgba(255, 26, 26, 0.5);
-  font-weight: 700;
+  text-shadow: 0 0 24px rgba(255, 26, 26, 0.6);
 }
 
 a {
